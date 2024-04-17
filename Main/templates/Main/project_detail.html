@@ -1,0 +1,74 @@
+<!-- project_detail.html -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<div class="container mt-4">
+    <h2>Thesis Topic Details</h2>
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">{{ topic.title }}</h3>
+            <h5 class="card-subtitle mb-2 text-muted">Supervised by {{ topic.thesis_supervisor }}</h5>
+            <table class="table table-striped mt-3">
+                <tbody>
+                    <tr>
+                        <th scope="row">Topic Number</th>
+                        <td>{{ topic.topic_number }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Category</th>
+                        <td>{{ topic.category }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Internal - Casuarina</th>
+                        <td>{{ topic.internal_casuarina }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Internal - Sydney</th>
+                        <td>{{ topic.internal_sydney }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">External</th>
+                        <td>{{ topic.external }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Chemical Engineering</th>
+                        <td>{{ topic.chemical_engineering }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Civil and Structural Engineering</th>
+                        <td>{{ topic.civil_and_structural_engineering }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Electrical and Electronics Engineering</th>
+                        <td>{{ topic.electrical_and_electronics_engineering }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mechanical Engineering</th>
+                        <td>{{ topic.mechanical_engineering }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Computer Science</th>
+                        <td>{{ topic.computer_science }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Cyber Security</th>
+                        <td>{{ topic.cyber_security }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Data Science</th>
+                        <td>{{ topic.data_science }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Information Systems and Data Science</th>
+                        <td>{{ topic.information_systems_and_data_science }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Software Engineering</th>
+                        <td>{{ topic.software_engineering }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="{% url 'project-list' %}" class="card-link">Back to list</a>
+        </div>
+    </div>
+</div>
